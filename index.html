@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Library</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <button onclick="toggleForm()">Add Book</button>
+    <button onclick="addExampleBooks()">Add Books Sample Set</button>
+
+    <div id="form" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleForm()">&times;</span>
+
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <input type="number" id="pages" placeholder="Pages" required>
+            <input type="checkbox" id="read">
+            <label for="read">Read</label>
+            <textarea id="note" placeholder="Note"></textarea>
+
+            <button onclick="addBookToLibrary()">Add Book</button>
+            <button onclick="clearForm()">Clear Form</button>
+        </div>
+    </div>
+
+    <div id="bookGrid"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
