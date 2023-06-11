@@ -1,4 +1,4 @@
 # Project-Library
-The Project assignment: https://www.theodinproject.com/lessons/node-path-javascript-library
+The Project assignment: https://www.theodinproject.com/lessons/node-path-javascript-classes
 
-The project preview: https://gricius.github.io/Project-Library/
+The project preview: 
