@@ -1,16 +1,18 @@
 let myLibrary = [];
 let exampleBooksAdded = false;
 
-function book(title, author, pages, read, note) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-    this.note = note;
-    this.info = function () {
-        let readStatus = this.read === "Yes" ? "read" : "not read yet";
-        return `${this.title} by ${this.author}, ${this.pages} pages, ${readStatus}`;
-    };
+class book {
+    constructor(title, author, pages, read, note) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+        this.note = note;
+        this.info = function () {
+            let readStatus = this.read === "Yes" ? "read" : "not read yet";
+            return `${this.title} by ${this.author}, ${this.pages} pages, ${readStatus}`;
+        };
+    }
 }
 
 function addBookToLibrary() {
